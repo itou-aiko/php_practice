@@ -1,43 +1,35 @@
 <?php
 
-//課題１
-$a = 3;
-$b = 7;
-echo $a + $b . PHP_EOL;
 
-//課題２
-$array_month = [
-'1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月'
-];
-echo $array_month[7] . PHP_EOL;
+//課題１
+$name = "aiko";
+if ($name == "aiko") {
+    echo "私は愛子です";
+}   else {
+    echo "あなたの名前ではありません";
+}
+
+
+//課題２ 
+$total = 0;
+for ($i = 0; $i <=10000; $i++) {
+    $total += $i;
+}
+echo $total;
+
 
 //課題３
-$hello = "Hello,";
-$name = "aiko";
-$world = "'s World!";
-
-echo $hello . $name . $world . PHP_EOL;
+$fruits = array("パイナップル","いちご","キウイ","バナナ","りんご");
+foreach($fruits as $fruit) {
+    echo "好きなフルーツは" . $fruit;
+    echo "\n";
+}
 
 //課題４
-$tech_boost = "tech";
-$tech_boost .= " boost";
-echo $tech_boost . PHP_EOL;
-
-//課題５
-$calendar_2018 = [
-    "January" => "1月",
-    "February" => "2月",
-    "March" => "3月",
-    "April" => "4月",
-    "May" => "5月",
-    "June" => "6月",
-    "July" => "7月",
-    "August" => "8月",
-    "September" => "9月",
-    "October" =>"10月",
-    "November" => "11月",
-    "December" => "12月"
-];
-
-// 12月を表示する
-echo $calendar_2018["December"];
+$start = 1;
+$end = 100;
+for($i = $start; $i <= $end; $i++) {
+    if(($i % 5) == 0) {
+        echo $i;
+    }
+}
